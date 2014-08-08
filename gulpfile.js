@@ -21,7 +21,7 @@ gulp.task('templates:html', function() {
 });
 
 gulp.task('templates:js', function() {
-  gulp.src(['./templates/js/**/*.jade', '!./templates/js/includes/**'])
+  gulp.src(['./templates/js/**/*.jade', '!./templates/js/**/includes/**'])
     .pipe($.jade({
       client: true
     }))
